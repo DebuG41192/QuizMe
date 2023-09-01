@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMe</title>
+    <link rel="icon" href="../Quiz Application with Timer/Images/no-idea_7574435.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <img class='background_img' src="../Quiz Application with Timer/Images/26539472_7246092.jpg" alt="background-img"/>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Register Here</span></div>
+      <form id="registration-form">
+      <input type="text" id="user-name" placeholder="UserName">
+      <input type="text" id="email" placeholder="Email">
+      <div id="categorys">Select Category</div>
+        <input type="radio" id="film" name="category" value="11">
+        <label for="film">Entertainment: Film</label><br>
+        <input type="radio" id="book" name="category" value="10">
+        <label for="book">Entertainment: Books</label><br>
+        <input type="radio" id="art" name="category" value="25">
+        <label for="art">Art</label> <br/>
+        <input type="radio" id="geo" name="category" value="22">
+        <label for="geo">Geography</label>
+      <input type="number" id="number-question" placeholder="Select number of questions">
+      <br/>
+      <div id="categorys">Difficulty Level</div>
+      <input type="radio" id="easy" name="level" value="easy">
+      <label for="easy">Easy</label><br>
+      <input type="radio" id="medium" name="level" value="medium">
+      <label for="medium">Medium</label><br>
+      <input type="radio" id="hard" name="level" value="hard">
+      <label for="hard">Hard</label>
+      <br/>
+      <button class="buttons restart" type="submit" >Register</button>
+    </form>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title"></div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">20</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next </button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text"></div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <!-- <div id="error-block"></div> -->
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
